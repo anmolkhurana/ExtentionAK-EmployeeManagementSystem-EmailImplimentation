@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>ExtentionAK</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <servlet>
+    <servlet-name>adminlogcontroller</servlet-name>
+    <servlet-class>com.extention.controller.adminlogcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminlogcontroller</servlet-name>
+    <url-pattern>/adminlogcontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addempcontroller</servlet-name>
+    <servlet-class>com.extention.controller.addempcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addempcontroller</servlet-name>
+    <url-pattern>/addempcontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>delempcontroller</servlet-name>
+    <servlet-class>com.extention.controller.delempcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delempcontroller</servlet-name>
+    <url-pattern>/delempcontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>viewempcontroller</servlet-name>
+    <servlet-class>com.extention.controller.viewempcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewempcontroller</servlet-name>
+    <url-pattern>/viewempcontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>viewpartempcontroller</servlet-name>
+    <servlet-class>com.extention.controller.viewpartempcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewpartempcontroller</servlet-name>
+    <url-pattern>/viewpartempcontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>emplogcontroller</servlet-name>
+    <servlet-class>com.extention.controller.emplogcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>emplogcontroller</servlet-name>
+    <url-pattern>/emplogcontroller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>editdataempcontroller</servlet-name>
+    <servlet-class>com.extention.controller.editdataempcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editdataempcontroller</servlet-name>
+    <url-pattern>/editdataempcontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>changepassempcontroller</servlet-name>
+    <servlet-class>com.extention.controller.changepassempcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>changepassempcontroller</servlet-name>
+    <url-pattern>/changepassempcontroller</url-pattern>
+  </servlet-mapping>
+ 		
+ 
+ <!-- SMTP settings -->
+	<context-param>
+		<param-name>host</param-name>
+		<param-value>smtp.gmail.com</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>port</param-name>
+		<param-value>587</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>user</param-name>
+		<param-value>anmolkhuranaindustryandgroups@gmail.com</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>pass</param-name>
+		<param-value>helloworld123</param-value>
+	</context-param>
+  
+</web-app>
